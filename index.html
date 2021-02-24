@@ -2,14 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Web Template</title>
+		<title>Visual Jukebox</title>
 		<!-- link to reset first!!! -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css" >
 		<link href="css/main.css" rel="stylesheet" type="text/css">
-		
+
 	</head>
 	<body>
 		<!-- Content Goes Here -->
+
+		<h1>My Audio Example</h1>
+		<main>
+			<h2 class="hidden">Audio Tracks</h2>
+			<!-- audio file should be .mp3 -->
+			<!-- loop="true" controls="true" autoplay="true" to display-->
+			<audio src="audio/Albatroz.mp3" controls></audio>
+
+			<img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="album art" class="track-ref">
+			<img data-trackref="STP_ILS" src="images/stp.jpeg" alt="album art" class="track-ref">
+			<img data-trackref="Compamion" src="images/wmm.jpeg" alt="album art" class="track-ref">
+
+			<section class="audio-controls">
+				<button>PLAY</button>
+				<button>STOP</button>
+				<button>REWIND</button>
+				<input id="volume-control" type="range" min="0" max="100" step="5"></input>
+			</section>
+
+		</main>
+
 		<script src="js/main.js"></script>
 	</body>
 

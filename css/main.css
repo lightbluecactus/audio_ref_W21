@@ -6,7 +6,7 @@
 	display: none;
 }
 
-a 
+a
 {
 	text-decoration: none;
 }
@@ -14,4 +14,36 @@ a
 ul
 {
 	list-style-type: none;
+}
+
+body
+{
+	font-family: arial, helvetica, sans-serif; font-size: 16px;
+}
+
+audio
+{
+	display: block;
+}
+
+.audio-controls
+{
+	margin-top: 1.5em;
+	border-top: thin solid #333;
+}
+
+.audio-controls button
+ {
+	padding: 0.5em 1em;
+	margin-top: 0.5em;
+	background-color: green;
+	color: white;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.track-href
+{
+	cursor: pointer;
+	padding: 1em;
 }
